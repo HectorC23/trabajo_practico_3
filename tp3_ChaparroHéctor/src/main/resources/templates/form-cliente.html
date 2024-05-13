@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>	Formulario de Clientes </title>
+</head>
+
+<body>
+
+    <header id="header">
+        <!-- Encabezado de la página -->
+        <h1>Formulario de Clientes</h1>
+        <nav>
+            <!-- Menú de navegación -->
+			<h3>Menú</h3>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#form-clientes">Formulario</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+	<main>
+		<h3> Datos del cliente </h3>
+		<form id="form-clientes" action="#" method="post">
+			
+			<div>
+				<label for="DNI"> DNI: </label>
+				<input type="number" id="DNI" name="dni" required placeholder="Sin puntos, ej: 42953938">
+			</div>
+			
+			<div>
+				<label for="NOMBRE"> Nombres: </label>
+				<input type="text" id="NOMBRE" name="nombre" required placeholder="Héctor Yamil">
+			</div>
+			
+			<div>
+				<label for="APELLIDO"> Apellidos: </label>
+				<input type="text" id="APELLIDO" name="apellido" required placeholder="Chaparro">
+			</div>
+			
+			<div>
+				<label for="NACIMIENTO"> Fecha de Nacimiento: </label>
+				<input type="date" id="NACIMIENTO" name="fechaNacimiento" required placeholder="01/04/2024">
+			</div>
+			
+			<div>
+				<label for="GENERO"> Genero: </label>
+				<input type="radio"  name="GENERO" value="Femenino" required>
+				<input type="radio"  name="GENERO" value="Masculino" required>
+				<input type="radio"  name="GENERO" value="X" required>
+			</div>
+			
+			
+			<div>
+				<label for="EMAIL"> Correo electrónico: </label>
+				<input type="email" id="EMAIL" name="email" required placeholder="alumnoFacultad@hotmail.com">
+			</div>
+			
+			<div>
+				<label for="DOMICIOLIO"> Domicilio: </label>
+				<input type="text" id="DOMICILIO" name="domicilio" required placeholder="Calle..,M,L,Localidad">
+			</div>
+			
+			<div>
+				<label for="PROVINCIA"> Provincia: </label>
+				<select id="PROVINCIA" name="provincia" required>
+				  <option value="JUJUY" selected>Jujuy</option>
+				  <option value="SALTA">Salta</option>
+				  <option value="TUCUMAN">Tucuman</option>
+				  <option value="MENDOZA">Mendoza</option>
+				</select>
+			</div>
+			
+			<div>
+				<label for="CELULAR"> Número de Teléfono Celular: </label>
+				<input type="number" id="CELULAR" name="celular" placeholder="+5493884785715">
+			</div>
+			
+			<div>
+				Categorias de interés:
+				<br>
+				<label for="CINE"> Cine: </label>
+				<input type="checkbox" id="CINE" name="intereses" value="cine">
+				
+				<label for="COMIDA"> Comida: </label>
+				<input type="checkbox" id="COMIDA" name="intereses" value="comida">
+				
+				<label for="MODA"> Moda: </label>
+				<input type="checkbox" id="MODA" name="intereses" value="moda">
+				
+				<label for="VIAJAR"> Viajar: </label>
+				<input type="checkbox" id="VIAJAR" name="intereses" value="viajar">
+				
+				<label for="ESTUDIAR"> Estudiar: </label>
+				<input type="checkbox" id="ESTUDIAR" name="intereses" value="estudiar">
+			</div>
+			
+			<div>
+				<label for="SUGERENCIAS"> Sugerencias para la Empresa: </label>
+				<textarea id="SUGERENCIAS" rows="4" cols="30" name="sugerencias"></textarea>
+			</div>
+			
+			<div>
+				<label for="PASSWORD"> Contraseña: </label>
+				<input type="password" id="PASSWORD" name="password" required>
+			</div>
+			
+			<div>			
+				<label for="TYC"> Acepto los términos y condiciones: </label>
+				<input type="checkbox" id="TYC" name="tyc" value="acepto" required>
+			</div>
+			
+			<div>			
+				<label for="SPAMS"> Acepto recibir información relativa a la empresa: </label>
+				<input type="checkbox" id="SPAMS" name="spams" value="acepto">
+			</div>
+			
+			<button type="submit">Enviar</button>
+			<button type="reset">Eliminar</button>
+			
+		</form>
+		
+	</main>
+	
+	<footer id="contact">
+			<h3>Información de contacto</h3>
+			<p><b>Número de telefono: </b>+5493884767955</p>
+			<p><b>Correo electronico: </b> alumnoProgramador23@fi.unju.edu.ar</p>
+			<p><b>Instagram: </b> <a href="https://www.instagram.com/"> Fi.unju.edu.ar.Instagram </a> </p>
+			<p><b>Facebook: </b> <a href="https://www.facebook.com/"> Fi.unju.edu.ar.Facebook </a> </p>
+			<p><b>Linkedin: </b> <a href="https://www.linkedin.com/"> Fi.unju.edu.ar.Linkedin </a> </p>
+	</footer>
+</body>
+</html>
