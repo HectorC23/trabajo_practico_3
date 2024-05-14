@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>	Formulario de Clientes </title>
+	<link rel="stylesheet" href="../static/css/estilos.css">
 </head>
 
 <body>
@@ -11,19 +12,18 @@
     <header id="header">
         <!-- Encabezado de la página -->
         <h1>Formulario de Clientes</h1>
-        <nav>
+        <nav class="navegador">
             <!-- Menú de navegación -->
-			<h3>Menú</h3>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#form-clientes">Formulario</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li	class="li-element"><a class="ancla" href="#primary">Inicio</a></li>
+                <li	class="li-element"><a class="ancla" href="#form-clientes">Formulario</a></li>
+                <li	class="li-element"><a class="ancla" href="#pie">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-	<main>
-		<h3> Datos del cliente </h3>
+	<main id="primary"	class="principal">
+		<h3 class="subtitulo"> Datos del cliente </h3>
 		<form id="form-clientes" action="#" method="post">
 			
 			<div>
@@ -47,10 +47,15 @@
 			</div>
 			
 			<div>
-				<label for="GENERO"> Genero: </label>
-				<input type="radio"  name="GENERO" value="Femenino" required>
-				<input type="radio"  name="GENERO" value="Masculino" required>
-				<input type="radio"  name="GENERO" value="X" required>
+				Genero:
+				<label for="FEMENINO"> Femenino </label>
+				<input type="radio" id="FEMENINO" name="GENERO" value="Femenino" >
+				
+				<label for="MASCULINO"> Masculino </label>
+				<input type="radio" id="MASCULINO"  name="GENERO" value="Masculino" >
+				
+				<label for="X"> X </label>
+				<input type="radio" id="X"  name="GENERO" value="X" >
 			</div>
 			
 			
@@ -125,13 +130,13 @@
 		
 	</main>
 	
-	<footer id="contact">
-			<h3>Información de contacto</h3>
+	<footer id="pie">
+			<h3 class="subtitulo">Información de contacto</h3>
 			<p><b>Número de telefono: </b>+5493884767955</p>
 			<p><b>Correo electronico: </b> alumnoProgramador23@fi.unju.edu.ar</p>
-			<p><b>Instagram: </b> <a href="https://www.instagram.com/"> Fi.unju.edu.ar.Instagram </a> </p>
-			<p><b>Facebook: </b> <a href="https://www.facebook.com/"> Fi.unju.edu.ar.Facebook </a> </p>
-			<p><b>Linkedin: </b> <a href="https://www.linkedin.com/"> Fi.unju.edu.ar.Linkedin </a> </p>
+			<p><b>Instagram: </b> <a class="ancla-pie" href="https://www.instagram.com/"> Fi.unju.edu.ar.Instagram </a> </p>
+			<p><b>Facebook: </b> <a class="ancla-pie" href="https://www.facebook.com/"> Fi.unju.edu.ar.Facebook </a> </p>
+			<p><b>Linkedin: </b> <a class="ancla-pie" href="https://www.linkedin.com/"> Fi.unju.edu.ar.Linkedin </a> </p>
 	</footer>
 </body>
 </html>
